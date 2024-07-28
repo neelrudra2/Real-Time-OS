@@ -51,6 +51,3 @@ scheduler.runScheduler(15);
 * For each time unit, the scheduler iterates over the list of tasks.<br>
 * It checks if the current time is a multiple of the task's period. If it is, the task is executed.</br>
 * The scheduler prints the task execution details for each time unit.</br>
-![screen1](https://github.com/user-attachments/assets/b072b71e-94c8-43d2-8bcb-09774f68ed9c)
-
-
