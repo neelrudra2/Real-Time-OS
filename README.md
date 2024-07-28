@@ -38,3 +38,4 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 * The scheduler prints the task execution details for each time unit.
 
 <h2>Project Screenshot:</h2>
+![RTOS](https://github.com/user-attachments/assets/b3125c19-190f-4dab-a4c7-10ddad3cf647)
