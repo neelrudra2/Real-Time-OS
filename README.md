@@ -24,8 +24,8 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
   * Task Function: A function pointer representing the action to be performed by the task
 
 <h3>2. Scheduler Initialization:</h3>
-..* The 'Scheduler' class is responsible for managing the tasks and simulating their execution.</br>
-..* Tasks are added to the scheduler using the 'addTask' method.
+* The 'Scheduler' class is responsible for managing the tasks and simulating their execution.</br>
+* Tasks are added to the scheduler using the 'addTask' method.
 
 <h3>3. Running the Scheduler:</h3>
 * The runScheduler method in the Scheduler class simulates the execution of tasks over a specified number of time units.</br>
