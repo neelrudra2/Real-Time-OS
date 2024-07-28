@@ -10,7 +10,7 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 4. Main Program: Create tasks and run the scheduler.
 
 <h2>Key Areas</h2>
-* OS Concepts: Understanding of basic operating system principles, such as task scheduling and periodic task management.</br>
+-OS Concepts: Understanding of basic operating system principles, such as task scheduling and periodic task management.</br>
 * Real-Time Processing: Implementation of scheduling for real-time tasks, ensuring tasks are executed within their defined periods.</br>
 * Data Structures: Use of data structures to manage tasks and their properties effectively.
 
