@@ -10,27 +10,27 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 4. Main Program: Create tasks and run the scheduler.
 
 <h2>Key Areas</h2>
-+ OS Concepts: Understanding of basic operating system principles, such as task scheduling and periodic task management.</br>
-..* Real-Time Processing: Implementation of scheduling for real-time tasks, ensuring tasks are executed within their defined periods.</br>
-..* Data Structures: Use of data structures to manage tasks and their properties effectively.
+* OS Concepts: Understanding of basic operating system principles, such as task scheduling and periodic task management.</br>
+* Real-Time Processing: Implementation of scheduling for real-time tasks, ensuring tasks are executed within their defined periods.</br>
+* Data Structures: Use of data structures to manage tasks and their properties effectively.
 
 <h2>How it works</h2>
 <h3>1. Task Definition:</h3>
-..* Each task in the scheduler is represented by a 'Task' object.</br>
-..* A task is characterized by:
-  ..* Name: A string representing the task's name.</br>
-  ..* Execution Time: An integer representing how long the task takes to execute.</br>
-  ..* Period: An integer representing the interval at which the task should be executed.</br>
-  ..* Task Function: A function pointer representing the action to be performed by the task
+* Each task in the scheduler is represented by a 'Task' object.</br>
+* A task is characterized by:
+  * Name: A string representing the task's name.</br>
+  * Execution Time: An integer representing how long the task takes to execute.</br>
+  * Period: An integer representing the interval at which the task should be executed.</br>
+  * Task Function: A function pointer representing the action to be performed by the task
 
 <h3>2. Scheduler Initialization:</h3>
 ..* The 'Scheduler' class is responsible for managing the tasks and simulating their execution.</br>
 ..* Tasks are added to the scheduler using the 'addTask' method.
 
 <h3>3. Running the Scheduler:</h3>
-..* The runScheduler method in the Scheduler class simulates the execution of tasks over a specified number of time units.</br>
-..* The scheduler uses Rate Monotonic Scheduling (RMS) to determine the execution order of tasks.</br>
-..* RMS is a fixed-priority scheduling algorithm where tasks with shorter periods have higher priority.
+* The runScheduler method in the Scheduler class simulates the execution of tasks over a specified number of time units.</br>
+* The scheduler uses Rate Monotonic Scheduling (RMS) to determine the execution order of tasks.</br>
+* RMS is a fixed-priority scheduling algorithm where tasks with shorter periods have higher priority.
 
 <h3>4. Task Execution Logic:</h3>
 * For each time unit, the scheduler iterates over the list of tasks.<br>
