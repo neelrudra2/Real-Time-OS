@@ -52,3 +52,4 @@ scheduler.runScheduler(15);
 * It checks if the current time is a multiple of the task's period. If it is, the task is executed.</br>
 * The scheduler prints the task execution details for each time unit.</br>
 
+![RTOS](https://github.com/user-attachments/assets/5e31f1d6-af07-4f1f-ae0f-3d18234b66e1)
