@@ -39,3 +39,12 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 
 <h2>Project Screenshot:</h2>
 ![RTOS](https://github.com/user-attachments/assets/b3125c19-190f-4dab-a4c7-10ddad3cf647)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, world!" << endl;
+    return 0;
+}
