@@ -18,10 +18,10 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 <h3>1. Task Definition:</h3>
 * Each task in the scheduler is represented by a 'Task' object.</br>
 * A task is characterized by:</br> &nbsp;&nbsp;&nbsp;&nbsp;
-     * Name: A string representing the task's name.</br>
-  * Execution Time: An integer representing how long the task takes to execute.</br>
-  * Period: An integer representing the interval at which the task should be executed.</br>
-  * Task Function: A function pointer representing the action to be performed by the task
+* Name: A string representing the task's name.</br>&nbsp;&nbsp;&nbsp;&nbsp;
+* Execution Time: An integer representing how long the task takes to execute.</br>&nbsp;&nbsp;&nbsp;&nbsp;
+* Period: An integer representing the interval at which the task should be executed.</br>&nbsp;&nbsp;&nbsp;&nbsp;
+* Task Function: A function pointer representing the action to be performed by the task
 
 <h3>2. Scheduler Initialization:</h3>
 * The 'Scheduler' class is responsible for managing the tasks and simulating their execution.</br>
