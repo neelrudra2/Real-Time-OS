@@ -26,6 +26,7 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 ```cpp
 Task task1("Task1", 1, 3, task1Function);
 Task task2("Task2", 1, 5, task2Function);
+```
 
 
 <h3>2. Scheduler Initialization:</h3>
