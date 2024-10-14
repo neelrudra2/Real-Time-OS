@@ -15,7 +15,7 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 * Data Structures: Use of data structures to manage tasks and their properties effectively.
 
 <h2>How it works</h2>
-<h3>1. Task Definition:</h3>
+<h3>1. Task Definition</h3>
 * Each task in the scheduler is represented by a 'Task' object.</br>
 * A task is characterized by:</br> &nbsp;&nbsp;&nbsp;&nbsp;
 * Name: A string representing the task's name.</br>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -28,7 +28,7 @@ Task task1("Task1", 1, 3, task1Function);
 Task task2("Task2", 1, 5, task2Function);
 ```
 
-<h3>2. Scheduler Initialization:</h3>
+<h3>2. Scheduler Initialization</h3>
 * The 'Scheduler' class is responsible for managing the tasks and simulating their execution.</br>
 * Tasks are added to the scheduler using the 'addTask' method.</br>
 
@@ -38,7 +38,7 @@ scheduler.addTask(task1);
 scheduler.addTask(task2);
 ```
 
-<h3>3. Running the Scheduler:</h3>
+<h3>3. Running the Scheduler</h3>
 * The runScheduler method in the Scheduler class simulates the execution of tasks over a specified number of time units.</br>
 * The scheduler uses Rate Monotonic Scheduling (RMS) to determine the execution order of tasks.</br>
 * RMS is a fixed-priority scheduling algorithm where tasks with shorter periods have higher priority.</br>
@@ -47,7 +47,7 @@ scheduler.addTask(task2);
 scheduler.runScheduler(15);
 ```
 
-<h3>4. Task Execution Logic:</h3>
+<h3>4. Task Execution Logic</h3>
 * For each time unit, the scheduler iterates over the list of tasks.<br>
 * It checks if the current time is a multiple of the task's period. If it is, the task is executed.</br>
 * The scheduler prints the task execution details for each time unit.</br>
