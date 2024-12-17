@@ -1,36 +1,35 @@
-<h1>RTOS Scheduler Simulation</h1>
-
-<h2>Overview</h2>
+# RTOS Scheduler Simulation
+## Overview
 This project is a basic simulation of a Real-Time Operating System (RTOS) scheduler using Rate Monotonic Scheduling (RMS) in C++. The scheduler manages a set of periodic tasks, each with a defined execution time and period. The RMS algorithm is used to determine the order in which tasks are executed based on their periods.
 
-<h2>Features</h2>
-1. Task Structure: Define a structure to represent a task, including its execution time, period, and priority.<br>
-2. Scheduler: Implement the scheduler that manages tasks based on their priority and period.</br>
-3. Task Execution: Simulate the execution of tasks based on the scheduling algorithm.</br>
-4. Main Program: Create tasks and run the scheduler.
+## Features
+- Task Structure: Define a structure to represent a task, including its execution time, period, and priority.
+- Scheduler: Implement the scheduler that manages tasks based on their priority and period.
+- Task Execution: Simulate the execution of tasks based on the scheduling algorithm.
+- Main Program: Create tasks and run the scheduler.
 
-<h2>Key Areas</h2>
-* OS Concepts: Understanding of basic operating system principles, such as task scheduling and periodic task management.</br>
-* Real-Time Processing: Implementation of scheduling for real-time tasks, ensuring tasks are executed within their defined periods.</br>
-* Data Structures: Use of data structures to manage tasks and their properties effectively.
+## Key Areas
+- OS Concepts: Understanding of basic operating system principles, such as task scheduling and periodic task management.
+- Real-Time Processing: Implementation of scheduling for real-time tasks, ensuring tasks are executed within their defined periods.
+- Data Structures: Use of data structures to manage tasks and their properties effectively.
 
-<h2>How it works</h2>
-<h3>1. Task Definition</h3>
-* Each task in the scheduler is represented by a 'Task' object.</br>
-* A task is characterized by:</br> &nbsp;&nbsp;&nbsp;&nbsp;
-* Name: A string representing the task's name.</br>&nbsp;&nbsp;&nbsp;&nbsp;
-* Execution Time: An integer representing how long the task takes to execute.</br>&nbsp;&nbsp;&nbsp;&nbsp;
-* Period: An integer representing the interval at which the task should be executed.</br>&nbsp;&nbsp;&nbsp;&nbsp;
-* Task Function: A function pointer representing the action to be performed by the task.</br>
+## How it works
+##### 1. Task Definition
+- Each task in the scheduler is represented by a 'Task' object.
+- A task is characterized by:
+-- Name: A string representing the task's name.
+-- Execution Time: An integer representing how long the task takes to execute.
+-- Period: An integer representing the interval at which the task should be executed.
+-- Task Function: A function pointer representing the action to be performed by the task.
 
 ```cpp
 Task task1("Task1", 1, 3, task1Function);
 Task task2("Task2", 1, 5, task2Function);
 ```
 
-<h3>2. Scheduler Initialization</h3>
-* The 'Scheduler' class is responsible for managing the tasks and simulating their execution.</br>
-* Tasks are added to the scheduler using the 'addTask' method.</br>
+##### 2. Scheduler Initialization
+- The 'Scheduler' class is responsible for managing the tasks and simulating their execution.
+- Tasks are added to the scheduler using the 'addTask' method.
 
 ```cpp
 Scheduler scheduler;
@@ -38,20 +37,19 @@ scheduler.addTask(task1);
 scheduler.addTask(task2);
 ```
 
-<h3>3. Running the Scheduler</h3>
-* The runScheduler method in the Scheduler class simulates the execution of tasks over a specified number of time units.</br>
-* The scheduler uses Rate Monotonic Scheduling (RMS) to determine the execution order of tasks.</br>
-* RMS is a fixed-priority scheduling algorithm where tasks with shorter periods have higher priority.</br>
+##### 3. Running the Scheduler
+- The runScheduler method in the Scheduler class simulates the execution of tasks over a specified number of time units.
+- The scheduler uses Rate Monotonic Scheduling (RMS) to determine the execution order of tasks.
+- RMS is a fixed-priority scheduling algorithm where tasks with shorter periods have higher priority.
 
 ```cpp
 scheduler.runScheduler(15);
 ```
 
-<h3>4. Task Execution Logic</h3>
-* For each time unit, the scheduler iterates over the list of tasks.<br>
-* It checks if the current time is a multiple of the task's period. If it is, the task is executed.</br>
-* The scheduler prints the task execution details for each time unit.</br>
+##### 4. Task Execution Logic
+- For each time unit, the scheduler iterates over the list of tasks.
+- It checks if the current time is a multiple of the task's period. If it is, the task is executed.
+- The scheduler prints the task execution details for each time unit.
 
-<h2>Project Screenshot:</h2>
-
-![RTOS](https://github.com/user-attachments/assets/5e31f1d6-af07-4f1f-ae0f-3d18234b66e1)
+## Contributions
+Feel free to fork this repository and contribute. Whether it's fixing bugs, optimizing code, or adding new features, contributions are always welcome! Submit a pull request, and let’s improve this tool together.
