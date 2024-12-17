@@ -16,11 +16,11 @@ This project is a basic simulation of a Real-Time Operating System (RTOS) schedu
 ## How it works
 ##### 1. Task Definition
 - Each task in the scheduler is represented by a 'Task' object.
-- A task is characterized by:
--- Name: A string representing the task's name.
--- Execution Time: An integer representing how long the task takes to execute.
--- Period: An integer representing the interval at which the task should be executed.
--- Task Function: A function pointer representing the action to be performed by the task.
+- A task is characterized by:</br>
+-- Name: A string representing the task's name.</br>
+-- Execution Time: An integer representing how long the task takes to execute.</br>
+-- Period: An integer representing the interval at which the task should be executed.</br>
+-- Task Function: A function pointer representing the action to be performed by the task.</br>
 
 ```cpp
 Task task1("Task1", 1, 3, task1Function);
