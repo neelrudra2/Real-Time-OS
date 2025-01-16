@@ -52,4 +52,4 @@ scheduler.runScheduler(15);
 - The scheduler prints the task execution details for each time unit.
 
 ## Contributions
-Feel free to fork this repository and contribute. Whether it's fixing bugs, optimizing code, or adding new features, contributions are always welcome! Submit a pull request, and let’s improve this tool together.
+Feel free to fork this repository and contribute. Whether it's about fixing bugs, optimizing code, or adding new features, contributions are always welcome! Submit a pull request, and let’s improve this tool together.
